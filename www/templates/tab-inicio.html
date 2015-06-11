@@ -1,0 +1,21 @@
+<ion-view view-title="Bem vindo ao 30 days challenge">
+  <ion-content class="padding">
+    <h4>Meta: {{ activeProject.titulo }}. {{ mensagem }}</h4>
+
+    <button class="button button-full button-balanced icon-left ion-checkmark" ng-Click="createTask('Ok')">
+      Marcar
+    </button>
+
+    <section id="directives-calendar"  ng-init="carrega()"  >    
+   	        <div class="well">
+                <div class="row-fluid">
+                    <div class="span12">
+                              <!-- calendario -->
+                            <div class="calendar"ng-model="eventSource" calendar="myCalendar" ui-calendar="uiConfig.calendar" ng-init="renderCalender('myCalendar')" ></div>
+                           
+                    </div>
+                </div>
+            </div>
+  </section>
+  </ion-content>
+</ion-view>
